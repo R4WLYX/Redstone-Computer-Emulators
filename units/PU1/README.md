@@ -1,4 +1,4 @@
-[🡐 Home](..\..\README.md)
+[🡐 Home](../../README.md)
 
 # PU1
 
@@ -11,6 +11,6 @@ A small analog (hexadecimal) Redstone processing unit built in Minecraft
 
 ## Example Programs
 
-### [Fibonacci](..\..\res\fib.pu1)
+### [Fibonacci](../../res/fib.pu1)
 
-![](media\fibonacci.mp4)
+![](media/fibonacci.mp4)
