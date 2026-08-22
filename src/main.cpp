@@ -17,16 +17,18 @@ int main() {
             std::cout << std::hex << +word.value;
 
             if (opcode == Opcode::LOAD_3 && i + 1 < byte_code.size())
-                std::cout << std::hex << ' ' << +byte_code[++i].value;
+                std::cout << std::hex << +byte_code[++i].value;
 
-            std::cout << '\n';
+            std::cout << '/';
 
             byte_len++;
         }
 
-        std::cout << std::dec << byte_len;
+        std::cout << "\nInstruction count: " << std::dec << byte_len;
 
         std::cin.get();
+
+        std::cout << '\n';
 
         while (!unit.halted()) {
             auto registers = unit.registers();

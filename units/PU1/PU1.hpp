@@ -3,10 +3,10 @@
 #include <array>
 #include <optional>
 
-#include "compiler.hpp"
-#include "expander.hpp"
-#include "lexer.hpp"
-#include "parser.hpp"
+#include "core/compiler.hpp"
+#include "core/expander.hpp"
+#include "core/lexer.hpp"
+#include "core/parser.hpp"
 
 #include "../unit.hpp"
 
