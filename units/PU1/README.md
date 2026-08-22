@@ -13,4 +13,4 @@ A small analog (hexadecimal) Redstone processing unit built in Minecraft
 
 ### [Fibonacci](../../res/fib.pu1)
 
-![](media/fibonacci.webm)
+[video](https://raw.githubusercontent.com/R4WLYX/Redstone-Computer-Emulators/main/units/PU1/media/fibonacci.mp4)
