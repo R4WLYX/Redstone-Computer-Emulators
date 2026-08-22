@@ -1,0 +1,55 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+
+---
+Language: Cpp
+
+NamespaceIndentation: Inner
+
+BreakTemplateDeclarations: Yes
+
+ColumnLimit: 90
+
+IncludeBlocks: Regroup
+SortIncludes: true
+IncludeCategories:
+  - Regex: '^<rw/meta/.*>'
+    Priority: 2
+  - Regex: '^<rw/math/.*>'
+    Priority: 3
+  - Regex: '^<rw/ecs/.*>'
+    Priority: 4
+  - Regex: '^<rw/graphics/.*>'
+    Priority: 5
+  - Regex: '^<.*>'
+    Priority: 1
+  - Regex: '^"meta/.*"'
+    Priority: 7
+  - Regex: '^"../.*"'
+    Priority: 8
+  - Regex: '^".*"'
+    Priority: 6
+
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterFunctionDefinitionName: false
+  AfterOverloadedOperator: false
+
+SpaceBeforeRangeBasedForLoopColon: true
+
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLambdasOnASingleLine: Inline
+AllowShortLoopsOnASingleLine: true
+
+BinPackArguments: false
+BinPackParameters: false
+PenaltyBreakTemplateDeclaration: 0
+PenaltyBreakBeforeFirstCallParameter: 0
+
+AlignAfterOpenBracket: BlockIndent
+BreakBeforeBinaryOperators: NonAssignment

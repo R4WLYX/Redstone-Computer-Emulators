@@ -1,0 +1,49 @@
+; unknown initial state
+cleanup:
+    CLEAR R1
+    CLEAR R2
+    CLEAR R3
+    SET
+
+setup:
+    LOAD 1
+    SET
+    MERGE R2 R4
+    MERGE R1 R2
+    LOAD 0xf
+    SUB
+    SUB
+    SET
+    MERGE R2 R4
+    LOAD 0xf
+    SUB
+    SET
+    CLEAR R2
+    MERGE R2 R4
+
+    CALL next
+    CALL next
+    CALL next
+    CALL next
+
+    MERGE R1 R2
+    HALT
+
+next:
+    CLEAR R3
+    MERGE R3 R1
+    SET
+    LOAD 0xf
+    SUB
+    MERGE R1 R2
+    CLEAR R2
+    MERGE R2 R4
+    SUB
+    SET
+    CLEAR R2
+    MERGE R2 R4
+    LOAD 0xf
+    SUB
+    SET
+    CLEAR R2
+    MERGE R2 R4
